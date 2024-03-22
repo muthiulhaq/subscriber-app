@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #fff;
+}
+
+.main-wrapper {
+    max-width: 600px;
+    height: 100%;
+    min-height: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    background-color: #009688;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #009688 !important;
+    color: #ffffff !important; 
+}
+.btn-logout {
+    background-color: #c7372f !important;
+    padding: 5px 15px;
+    color: #ffffff !important;
+}
+.green-text {
+    color: #009688;
+}
+.dashboard-status-check-box .form-check-input:checked {
+    background-color: #009688 !important;
+    border: 1px solid #009688;
+    opacity: 1 !important;
+}
+.admin-dropdown .p-dropdown {
+    width: 100%;
+}

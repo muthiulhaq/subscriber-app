@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between border-bottom mb-3">
+    <div>
+        <span class="d-flex">Name: <strong class="text-capitalize ps-1">{{userDetails?.username}}</strong></span>
+        <span>Role: <span class="text-capitalize">{{userDetails?.role}}</span></span>
+    </div>
+    <div>
+        <span class="btn btn-logout alert" (click)="logout($event)">Logout</span>
+    </div>
+</div>
+<p-confirmDialog></p-confirmDialog>

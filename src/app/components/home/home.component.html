@@ -1,0 +1,7 @@
+<h5 class="text-center mt-3">Welcome to the app!</h5>
+@if (isLogin) {
+    <p>You are already logged in, click here to <a [routerLink]="['/dashboard']">Dashboard</a></p>
+} @else {
+    <p>You need to login, go to <a [routerLink]="['/login']">Login page</a></p>
+}
+

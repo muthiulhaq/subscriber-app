@@ -1,0 +1,32 @@
+@if (loading) { <app-loader /> }
+
+<div class="p-5">
+
+    <h3 class="text-center mb-3 border-bottom pb-2">Register to the App</h3>
+
+    <div class="flex flex-column gap-2 mb-3">
+        <label for="username" class="form-label">User Name</label>
+        <input class="form-control" type="username" aria-describedby="username-help" pInputText [(ngModel)]="username" id="username" name="username"/>
+        <small class="form-text" id="username-help">Enter a username for this app.</small>
+    </div>
+
+    <div class="flex flex-column gap-2 mb-3">
+        <label for="emailId" class="form-label">Email Address</label>
+        <input class="form-control" type="email" aria-describedby="email-help" pInputText [(ngModel)]="emailId" id="emailId" name="emailId"/>
+        <small class="form-text" id="email-help">Enter your email address.</small>
+    </div>
+
+    <div class="flex flex-column gap-2 mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input class="form-control" type="password" aria-describedby="password-help" pInputText [(ngModel)]="password" id="password" name="password"/>
+        <small class="form-text" id="password-help">Enter a new password to signup.</small>
+    </div>
+
+    @if(errorMessage){
+        <p class="danger p-0 ps-2 alert alert-danger text-capitalize" role="alert">{{errorMessage}}</p>
+    }
+
+    <button type="submit" (click)="register()" class="btn btn-primary" [disabled]="!username || !emailId || !password">Register</button>
+    <p class="mt-3"><a [routerLink]="['/login']">Login</a> - If you are already reistered. </p>
+
+</div>
